@@ -10,7 +10,7 @@ class Service {
 
     constructor() {
         this.http = axios.create({
-            baseURL: "http://localhost:4000/",
+            baseURL: "https://student-insight-server.vercel.app/",
             withCredentials: true
         });
         this.setupInterceptors();
