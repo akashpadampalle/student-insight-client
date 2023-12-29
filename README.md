@@ -1,31 +1,34 @@
-# React + TypeScript + Vite
+# Student insight client
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+this project is created for Coding Ninjas Full Stack Skill Test
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*if you are using project in your localhost please setup https development environment*
 
-## Expanding the ESLint configuration
+> clone git repository and install dependencies
+>
+> ```bash
+> git clone https://github.com/akashpadampalle/student-insight-client.git
+> cd student-insight-client
+> npm install
+> ```
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Usages
 
-- Configure the top-level `parserOptions` property like this:
+> start react client
+>
+> ```bash
+> npm run dev
+> ```
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+now you can open [https://localhost:5173/login](https://localhost:5173/login) in your browser and enter username `admin` and password `admin`
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# student-insight-client
+## Features
+
+1. Create, delete, update, view students
+2. Create, delete, update, view batches
+3. Create, delete, update, view results or download results in csv file
+4. Create, delete, update, view interviews
+
+## Screenshots
