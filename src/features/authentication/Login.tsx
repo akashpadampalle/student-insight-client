@@ -31,7 +31,7 @@ const Login = () => {
     setLoading(true);
 
     const data = await service.postRequest<AuthState>('/login', formData);
-    
+
     if (data instanceof ErrorMessage) {
       errorToast(data.message);
     } else {
@@ -41,13 +41,14 @@ const Login = () => {
     }
 
     setLoading(false)
-    
+
   }
 
   return (
     <div className="w-full">
       <h1 className="py-2 text-2xl text-center">Login</h1>
-      <form onSubmit={ handleSubmit }>
+
+      <form onSubmit={handleSubmit}>
         <table className="m-auto mt-4 border ">
           <tbody >
             <tr className="text-center">
@@ -60,12 +61,21 @@ const Login = () => {
             </tr>
             <tr className="text-center">
               <td colSpan={2} className={(isValid) ? "bg-green-300 hover:shadow hover:bg-green-400" : "bg-gray-500"}>
-                <input type="submit" value={`${(loading)? "Loading..." : "Submit" }`} disabled={!isValid} />
+                <input type="submit" value={`${(loading) ? "Loading..." : "Submit"}`} disabled={!isValid} />
               </td>
             </tr>
           </tbody>
         </table>
       </form>
+
+      <div className="flex justify-center mt-8">
+        <div className="border border-gray-300 text-center py-2 px-8 text-gray-300">
+          <h2 className="mb-4">For Test</h2>
+          <div>username: admin</div>
+          <div>password: admin</div>
+        </div>
+      </div>
+
     </div>
   )
 }

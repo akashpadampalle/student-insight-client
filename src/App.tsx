@@ -1,3 +1,12 @@
+/*
+  if you are using localhost to develop and test this project please setup https
+
+                          username: admin
+                          password: admin
+
+
+*/
+
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Welcome from "./features/authentication/Welcome";
 import Login from "./features/authentication/Login";
